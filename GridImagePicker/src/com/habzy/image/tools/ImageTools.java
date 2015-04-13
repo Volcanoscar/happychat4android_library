@@ -80,7 +80,7 @@ public class ImageTools {
 
                     int dataColumnIndex = imagecursor.getColumnIndex(MediaStore.Images.Media.DATA);
 
-                    item.mPath = "file://" + imagecursor.getString(dataColumnIndex);
+                    item.mPath = imagecursor.getString(dataColumnIndex);
 
                     galleryList.add(item);
                 }
